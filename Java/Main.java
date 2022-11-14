@@ -6,10 +6,10 @@ class Main{
         car.passenger = 4;
         car.printDataCar();
 
-
-        Car car2 = new Car("JAK067",new Account("Paola Agudelo", "PAO234"));
-        car2.passenger = 3;
-        car2.printDataCar();
-        
+        Driver driver = new Driver("Paola Agudelo","PAO234","pao@gmail.com","pao123");
+        UberX uberx = new UberX("JAK067",new Driver("Paola Agudelo", "PAO234","pao@gmail.com","pao123"),"Chevrolet","Camaro");
+        uberx.passenger = 3;
+        uberx.printDataCar();
+        driver.printDataDriver();
     }
 }
